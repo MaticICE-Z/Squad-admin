@@ -1,0 +1,71 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+//// Valid access levels are as follows													 
+////		startvote - not used														 
+////		changemap																	 
+////		pause - Pause server gameplay												 
+////		cheat - Use server cheat commands											 
+////		private	- Password protect server											 
+////		balance	- Group Ignores server team balance										 
+////		chat - Admin chat and Server broadcast										 
+////		kick																		 
+////		ban																		  	 
+////		config - Change server config												 
+////		cameraman - Admin spectate mode												 
+////		immunity - Cannot be kicked / banned										 
+////		manageserver - Shutdown server												 
+////		featuretest - Any features added for testing by dev team					 
+////		reserve - Reserve slot														 
+////		demos - Record Demos (not working)											 
+////		debug - show admin stats command and other debugging info		
+////		teamchange - No timer limits on team change			 
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//		The Format for adding groups is:
+//	Group=<Group Name>:<Permission 1>,<Permission 2>,<Permission 3>
+//
+//		For example:
+//	Group=MyGroup: pause, demos, changemap
+//
+//		The groups below are the defaults, add to or change them as needed:
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+Group=DSuperA:balance,reserve,teamchange,immunity,chat,changemap,kick,ban,private,cheat,cameraman,config,featuretest,debug
+Group=DMegaA:balance,reserve,teamchange,immunity,chat,changemap,kick,ban,
+Group=DAdmin:balance,reserve,teamchange,immunity,chat,changemap,kick
+Group=Donator:balance,reserve,teamchange,immunity
+
+
+Group=SuperA:chat,changemap,kick,ban,private,cheat,cameraman,config
+Group=MegaA:,chat,changemap,kick,ban,
+Group=Admin:chat,changemap,kick
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//		The format for adding admins is:
+//	Admin=<Steam ID #>:<Group Name>
+//
+//		For example:
+//	Admin=123456:Admin		// Adam the admin
+//	Admin=654321:Moderator	// Molly the moderator
+//
+//  Add your own below:
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+//DSuperA
+Admin=76561197996465056:DSuperA //MaticICE
+Admin=76561198084912278:DSuperA //Alen
+Admin=76561198082497361:DSuperA //7burek7
+Admin=76561198021119604:DSuperA //kliffinpol
+Admin=76561198072140029:DSuperA //majorplayer
+Admin=76561198027176158:DSuperA //Roxer
+
+//Donator
+Admin=76561198015795647:Donator //Kris
+Admin=76561198020539718:Donator //Crusader
+
+
+//SuperA
+Admin=76561198089890222:DSuperA //Polo Besscobar
+Admin=76561197993191359:Donator //Kief
+Admin=76561198012603724:Donator //Mr intruder
+Admin=76561198171867967:Donator //Vacation
